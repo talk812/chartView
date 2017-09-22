@@ -343,6 +343,7 @@ class chartView: UIView ,mainScrollViewDelegate
         let actualValue = CGFloat(value) - minValue <= 0 ? 0 : CGFloat(value) - minValue
         let halfUnitHeight = unitHeight / 2
         return (actualHeight - (actualHeight / totalValue * actualValue)) + halfUnitHeight
+        
     }
     
     fileprivate func getTotalContentSizeOfWidth() -> CGFloat
